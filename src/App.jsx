@@ -16,14 +16,14 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
-        <Route activeClassName="active_class" exact path="/" element={<Dashboard />}></Route>
+        <Route activeClassName="active_class" exact path="/nate-frontend/" element={<Dashboard />}></Route>
           
-          <Route activeClassName="active_class" exact path="/slack/" element={<Slack />}>
-            <Route path="files" element={<Filepreview />}></Route>
-            <Route path="tables" element={<PIIDataComponent />}></Route>
+          <Route activeClassName="active_class" exact path="/nate-frontend/slack/" element={<Slack />}>
+            <Route path="/nate-frontend/slack/files" element={<Filepreview />}></Route>
+            <Route path="/nate-frontend/slack/tables" element={<PIIDataComponent />}></Route>
           </Route>
 
-          <Route activeClassName="active_class" exact path="/global-settings" element={<Globalsettings />}></Route>
+          <Route activeClassName="active_class" exact path="/nate-frontend/global-settings" element={<Globalsettings />}></Route>
           <Route path="*" element={<Notfound />}></Route>
 
         </Routes>
