@@ -8,7 +8,7 @@ function PIIDataComponent() {
     console.log("In useEffect")
     const fetchData = async () => {
       try {
-        const response = await fetch("/assets/db/data.json", {
+        const response = await fetch("https://5959-2401-4900-8815-799d-65f3-b586-dd8-3d24.ngrok-free.app/view-data", {
           headers: {
             'ngrok-skip-browser-warning': 'true'
           }
