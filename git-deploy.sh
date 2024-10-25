@@ -13,4 +13,4 @@ git commit -m "final changes done"
 git push
 
 # Run npm command to deploy
-bun run deploy
+npm run deploy
